@@ -10,6 +10,8 @@ class Functions {
 
   addition(TextEditingController num1, TextEditingController num2,
       BuildContext context) {
+    print(num1.text);
+    print(num2.text);
     if ((num1.text == null && num2.text == null) ||
         (num1.text == "" && num2.text == "")) {
       Toast.show("please enter valid number", context);
