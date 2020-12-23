@@ -8,11 +8,13 @@ class Functions {
     return "Hello World";
   }
 
-  addition(int num1, int num2, BuildContext context) {
-    if ((num1 == null && num2 == null)) {
+  addition(TextEditingController num1, TextEditingController num2,
+      BuildContext context) {
+    if ((num1.text == null && num2.text == null) ||
+        (num1.text == "" && num2.text == "")) {
       Toast.show("please enter valid number", context);
     } else {
-      return (num1 + num2).toString();
+      return (int.parse(num1.text) + int.parse(num2.text)).toString();
     }
   }
 }
