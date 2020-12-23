@@ -9,7 +9,7 @@ class Functions {
   }
 
   addition(int num1, int num2, BuildContext context) {
-    if ((num1 == null && num2 == null) || (num1 == "" || num2 == "")) {
+    if ((num1 == null && num2 == null)) {
       Toast.show("please enter valid number", context);
     } else {
       return (num1 + num2).toString();
