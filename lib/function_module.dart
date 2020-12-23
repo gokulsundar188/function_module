@@ -9,6 +9,6 @@ class Functions {
   // }
 
   String helloWorld() {
-    return "hello World";
+    return "Hello World";
   }
 }
