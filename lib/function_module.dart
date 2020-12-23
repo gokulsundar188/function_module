@@ -14,7 +14,7 @@ class Functions {
     return "Hello World";
   }
 
-  addition(TextEditingController num1, TextEditingController num2) {
-    return int.parse(num1.text) + int.parse(num2.text);
+  addition(int num1, int num2) {
+    return (num1 + num2).toString();
   }
 }
